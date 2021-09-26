@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* HEADER SECTION */
+
+header {
+  z-index: 999;
+  position: fixed;
+  background: #2a799c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 1.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border: 1px solid #fff;
+  padding: 1px 7px;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500px;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: 0.5s ease;
+}
+
+header .navigation a:hover {
+  opacity: 0.7;
+  font-size: 1.1rem;
+}
+
+body {
+  min-height: 110vh;
+}
+
+/* MAIN SECTION */
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main .content {
+  z-index: 1;
+  max-width: 800px;
+}
+
+.main .content h2 {
+  z-index: 1;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.animated-text {
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.animated-text h3 {
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 1px;
+}
+
+.animated-text h3:nth-child(1) {
+  animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+  0% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -70px;
+  }
+  50% {
+    margin-top: -140px;
+  }
+  75% {
+    margin-top: -70px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.btn {
+  color: #fff;
+  background: #3a6cf4;
+  font-size: 1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+  margin: 20px 0;
+}
+
+.btn:hover {
+  background: #235bf6;
+  opacity: 0.9;
+}
+
+.media-icons {
+  margin-top: 10px;
+  margin-left: 70px;
+  text-decoration: none;
+}
+
+.media-icons a {
+  color: #fff;
+  font-size: 25px;
+  margin-right: 30px;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.media-icons a:hover {
+  color: #3a6cf4;
+  font-size: 2rem;
+  opacity: 0.9;
+}
+
+/* ABOUT SECTION */
+
+.title {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  z-index: 1;
+  position: relative;
+  color: #3a6cf4;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 60px;
+  border-bottom: 5px solid #3a6cf4;
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.about .content .col-left {
+  position: relative;
+  width: 45%;
+}
+
+.about .content .col-right {
+  position: relative;
+  width: 50%;
+}
+
+.about .content .col-left .img-card {
+  position: relative;
+  width: 100%;
+  min-height: 450px;
+}
+
+.about .content .col-left .img-card img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.about .content .col-right .content-title {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* SKILLS SECTION */
+
+.skills {
+  background: #073c65;
+}
+
+.skills .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.skills .content .col-left {
+  position: relative;
+  width: 45%;
+}
+
+.skills .content .col-right {
+  position: relative;
+  width: 45%;
+}
+
+.skills .content .col-right .bar {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.skills .content .col-right .bar .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skills .content .col-right .bar .info span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.skills .content .col-right .bar .line {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.skills .content .col-right .bar .html {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background: #ed0e37;
+  border-radius: 5px;
+  margin-top: -15px;
+  width: 90%;
+}
+
+.skills .content .col-right .bar .css {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background: #95ed0e;
+  border-radius: 5px;
+  margin-top: -15px;
+  width: 75%;
+}
+
+.skills .content .col-right .bar .js {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  background: #7a0eed;
+  border-radius: 5px;
+  margin-top: -15px;
+  width: 30%;
+}
+
+/* Contact SECTION */
+
+.contact-form {
+  background: #fff;
+  max-width: 600px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  margin: auto;
+}
+
+.contact-form h3 {
+  color: #111;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-form .input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+  color: #111;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #111;
+  border-radius: 5px;
+  resize: none;
+  transition: 0.5s ease;
+}
+
+.contact-form .input-box input:hover,
+.contact-form .input-box textarea:hover {
+  background: #f1f1f0;
+}
+
+.contact-form .input-box .send-btn {
+  color: #fff;
+  background: #3a6cf4;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.contact-form .input-box .send-btn:hover {
+  background: #235bf6;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  /* Nav */
+  header {
+    display: inline-block;
+    padding: 10px 50px;
+    justify-content: space-around;
+  }
+  header .logo {
+    display: none;
+  }
+  header .navigation a {
+    display: block;
+    margin-left: 20px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  header .navigation a:hover {
+    /* opacity: 1; */
+    font-size: 1em;
+  }
+  /* Main */
+  section {
+    padding: 80px;
+  }
+  /* About */
+  .about .content {
+    display: block;
+  }
+  .about .content .col-right {
+    width: 100%;
+  }
+  .about .content .col-left .img-card {
+    min-height: 100%;
+  }
+  .about .content .col-left {
+    width: 100%;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  /* Skills */
+  .skills .content {
+    display: inline-block;
+  }
+  .skills .content .col-left {
+    width: 100%;
+  }
+  .skills .content .col-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 498px) {
+  section {
+    padding: 20px;
+  }
+}
